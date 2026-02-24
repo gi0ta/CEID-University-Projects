@@ -1,0 +1,14 @@
+CLASS FistClass {
+
+    PRIVATE INT myMethod(){
+        RETURN 5;
+    }
+
+}
+
+PUBLIC CLASS MyClass{
+
+    INT x = FistClass.myMethod():
+
+}
+

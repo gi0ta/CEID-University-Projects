@@ -1,0 +1,198 @@
+<program> ::= <class_declaration> <code>
+
+<code> ::= <class_declaration> <code>
+         | <method_declaration> <code>
+         | <variable_declaration> <code>
+         | <print_command> <code>
+         | ε
+
+
+<class_declaration> ::= <begin_class_declaration> "{" <class_body> "}"
+
+<begin_class_declaration> ::= <access_modifier> "CLASS" <class_name>
+
+<class_body> ::= <variable_declaration> <class_body>
+               | <method_declaration> <class_body>
+               | <class_declaration> <class_body>
+               | <object_creation> <class_body>
+               | ε
+
+<class_member> ::= <class_name> "." <identifier>
+                 | <class_name> "." <identifier> "(" <method_call_parameter_list> ")"
+
+
+<variable_declaration> ::= <access_modifier> <data_type> <identifier> ";"
+
+
+<opt_variable_declarations> ::= <opt_variable_declarations> <variable_declaration>
+
+
+<method_declaration> ::= <access_modifier> <data_type> <identifier> "(" <method_parameter_list> ")" "{" <method_body> "}"
+                       | <access_modifier> "VOID" <identifier> "(" <method_parameter_list> ")" "{" <method_body> "}"
+
+<method_parameter_list> ::= <method_parameter_list> "," <method_parameter>
+                          | <method_parameter>
+                          | ε
+
+<method_call_parameter_list> ::= <method_call_parameter_list> "," <method_call_parameter>
+                               | <method_call_parameter>
+                               | ε
+
+<method_parameter> ::= <data_type> <identifier>
+
+<method_call_parameter> ::= <identifier>
+
+<method_body> ::= <opt_variable_declarations> <commands> <opt_return>
+
+<opt_variable_declarations> ::= <opt_variable_declarations> <variable_declaration>
+                               | ε
+
+<commands> ::= <command> <commands>
+             | ε
+
+<opt_return> ::= "return" <expression> ";"
+               | "return" ";"
+               | ε
+
+<access_modifier> ::= "public"
+                    | "private"
+                    | ε
+
+
+<commands> ::= <command> <commands>
+             | ε
+
+<commands_with_break> ::= <commands>
+                        | <commands> "BREAK" ";"
+
+<command> ::= <print_command>
+            | <assign_command>
+            | <object_creation>
+            | <if_statement>
+            | <switch_statement>
+            | <do_loop>
+            | <for_loop>
+            | <comment>
+              
+
+<object_creation> ::= <class_name> <identifier> "=" <object_instation> ";"
+
+<print_command> ::= "PRINT.OUT" "(" "STRING_LITERAL" ")" ";"
+                  | "PRINT.OUT" "(" "STRING_LITERAL" "," <method_call_parameter_list> ")" ";"
+
+<assign_command> ::= <identifier> "=" <expression> ";"
+                   | <class_member> "=" <expression> ";"
+
+<assign_command_no_semicolon> ::= <identifier> "=" <expression>
+                                | <class_member> "=" <expression>
+
+<class_member> ::= <class_name> "." <identifier>
+                 | <class_name> "." <identifier> "(" <method_call_parameter_list> ")"
+
+<object_instation> ::= "NEW" <class_name> "(" ")"
+
+<method_call_parameter_list> ::= <method_call_parameter_list> "," <method_call_parameter>
+                               | <method_call_parameter>
+                               | ε
+
+<method_call_parameter> ::= <identifier>
+
+
+<if_statement> ::= "IF" "(" <bool_expression> ")" "{" <commands_with_break> "}" <else_if_list> <else_statement>
+
+<else_if_statement> ::= "ELSE IF" "(" <bool_expression> ")" "{" <commands_with_break> "}"
+
+<else_if_list> ::= <else_if_list> <else_if_statement>
+                 | ε
+
+<else_statement> ::= "ELSE" "{" <commands_with_break> "}"
+                   | ε
+
+<switch_statement> ::= "SWITCH" "(" <expression> ")" "{" <case_statement_list> <opt_default> "}"
+
+<case_statement> ::= "CASE" <expression> ":" <commands>
+
+<case_statement_list> ::= <case_statement_list> <case_statement>
+                        | <case_statement>
+
+<opt_default> ::= "DEFAULT" ":" <commands>
+                | ε
+
+
+<do_loop> ::= "DO" "{" <commands_with_break> "}" "WHILE" "(" <bool_expression> ")"
+
+<for_loop> ::= "FOR" "(" <variable_declaration_with_assign> ";" <comparison_expression> ";" <assign_command_no_semicolon> ")" "{" <commands_with_break> "}"
+
+
+<expression> ::= <numerical_expression>
+               | <bool_expression>
+               | "CHAR_LITERAL"
+               | "STRING_LITERAL"
+               | <object_instation>
+               | <identifier> "(" <method_call_parameter_list> ")"
+
+<object_instation> ::= "NEW" <class_name> "(" ")"
+
+<numerical_expression> ::= "INT_LITERAL"
+                         | <double_literal>
+                         | <identifier>
+                         | <class_member>
+                         | "(" <numerical_expression> ")"
+                         | "-" <numerical_expression>
+                         | <numerical_expression> "+" <numerical_expression>
+                         | <numerical_expression> "-" <numerical_expression>
+                         | <numerical_expression> "*" <numerical_expression>
+                         | <numerical_expression> "/" <numerical_expression>
+
+<bool_expression> ::= <bool_literal>
+                    | <comparison_expression>
+                    | "(" <bool_expression> ")"
+                    | <bool_expression> "AND" <bool_expression>
+                    | <bool_expression> "OR" <bool_expression>
+
+<comparison_expression> ::= "(" <comparison_expression> ")"
+                          | <numerical_expression> ">" <numerical_expression>
+                          | <numerical_expression> "<" <numerical_expression>
+                          | <numerical_expression> "EQ" <numerical_expression>
+                          | <numerical_expression> "NEQ" <numerical_expression>
+
+<bool_literal> ::= "TRUE"
+                 | "FALSE"
+
+<double_literal> ::= "DOUBLE_LITERAL" "DOUBLE_SP"
+
+
+<opt_return> ::= "RETURN" <expression> ";"
+               | "RETURN" ";"
+               | ε
+
+<identifier> ::= <class_name>
+               | <generic_identifier>
+
+<data_type> ::= "INT"
+             | "DOUBLE"
+             | "BOOLEAN"
+             | "CHAR"
+             | "STRING"
+
+<access_modifier> ::= "PUBLIC"
+                    | "PRIVATE"
+                    | ε
+<class_name> ::= <capital_letter> <identifier_tail>
+
+<generic_identifier> ::= <identifier_start> <identifier_tail>
+<identifier_start> ::= <letter> | "_"
+<identifier_tail> ::= <identifier_char> <identifier_tail>
+                   | ε
+<identifier_char> ::= <letter>
+                    | <digit>
+                    | "_"
+
+<letter> ::= "a" | "b" | ... | "z" | "A" | "B" | ... | "Z"
+<capital_letter> ::= "A" .. "Z"
+<digit> ::= "0" | "1" | ... | "9"
+
+
+<comment> ::= <single_line_comment> | <multi_line_comment>
+<single_line_comment> ::= "//" <any_character_sequence> "\n"
+<multi_line_comment> ::= "/*" <any_character_sequence> "*/"

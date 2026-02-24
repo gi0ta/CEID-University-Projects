@@ -1,0 +1,3 @@
+/home/gg/Documents/parser_project/build/CMakeFiles/parser.dir
+/home/gg/Documents/parser_project/build/CMakeFiles/edit_cache.dir
+/home/gg/Documents/parser_project/build/CMakeFiles/rebuild_cache.dir

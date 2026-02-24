@@ -1,0 +1,13 @@
+CLASS MyClass {
+
+    INT x = 10;
+
+    PUBLIC VOID myMethod() {
+        z = x + 5; // Χρήση αδήλωτης μεταβλητής 'z'
+    }
+
+    PUBLIC INT anotherMethod() {
+        RETURN undefinedMethod(); // Κλήση αδήλωτης μεθόδου
+    }
+
+}

@@ -1,0 +1,162 @@
+CLASS FistClass {
+    INT x;
+}
+
+PUBLIC CLASS MyClass{
+
+    INT x;
+    FistClass x = NEW FistClass ();
+
+    // Σχόλιο μιας γραμμής
+    /*
+       Σχόλιο
+       πολλών
+       γραμμών
+    */
+
+    CLASS MyNestedClass{
+        INT nested_int;
+        CHAR nested_char;
+    }
+
+    PUBLIC INT _my_public_int;
+    PRIVATE DOUBLE _my_private_double;
+
+    CHAR _my_char;
+    STRING _my_string;
+
+
+    PUBLIC INT my_method(INT par_1, DOUBLE par_2){}
+
+    PUBLIC INT my_second_method(){
+        INT local_variable;
+        INT x_int = 5;
+        DOUBLE x_double = 5.5d;
+        BOOLEAN x_bool = TRUE;
+        INT x_function_call = my_method();
+
+        MyNestedClass nested_class_object = NEW MyNestedClass();
+        MyNestedClass x_object = NEW MyNestedClass();
+
+        x_double = (5+5) *5/55 - 5.5d;
+        x_bool = TRUE && (TRUE || FALSE);
+
+        PRINT.OUT("This is a string");
+
+        RETURN 0;
+    }
+}
+
+PRIVATE CLASS MySecondClass{
+
+    INT x;
+    INT y;
+    BOOLEAN z;
+
+    PUBLIC INT test_if(){
+
+        IF ( y > 0 )
+        {
+            y = 1;
+        }
+
+        IF ( z > 0 && y > 0 )
+        {
+            z = 1;
+        } ELSE
+        {
+            z = -1;
+        }
+
+
+        IF ( (z > 0 && y > 0) || x > 0 )
+        {
+            x = 1;
+        } ELSE IF ( x < 0 )
+        {
+            x = 2;
+        } ELSE IF ( FALSE )
+        {
+            x = 3;
+        } ELSE
+        {
+            x = -1;
+        }
+
+        RETURN x*y*z;
+    }
+
+    PUBLIC BOOLEAN test_switch(){
+
+        SWITCH (x){
+            CASE 0:
+                x = x + 1;
+        }
+
+        SWITCH (y){
+            CASE 0:
+                y = y + 1;
+            CASE -1:
+                y = y - 1;
+        }
+
+        SWITCH (z){
+            CASE TRUE:
+                z = (x*y > x/y);
+            DEFAULT:
+                z = TRUE;
+        }
+
+        RETURN (x>y);
+    }
+
+}
+
+PRIVATE CLASS MyThirdClass{
+
+    VOID test_assigns(){
+
+        INT x = MyClass._my_public_int;
+        // INT x = MyClass._not_existing_variable;
+        // INT x = MyClass._my_private_double;
+
+        INT z = 4.5d;
+        CHAR y;
+        BOOLEAN f;
+
+        x = 5;
+        x = (5*5) + MyClass._my_public_int;
+        y = 'r';
+        y = '\n';
+        y = "String value";
+        f = (5>3) || (x*3<2);
+        f = true;
+        f = x==4;
+    }
+}
+
+CLASS MyFourthClass{
+
+    PRIVATE INT x, y, z;
+
+    PUBLIC INT k=0, l=10, m=20;
+
+    INT test_do_loop(INT x){
+        DO{
+            PRINT.OUT("This is a string");
+            x = x-2;
+            IF (x==0){
+                BREAK;
+            }
+        }WHILE(x<0)
+
+        RETURN x;
+    }
+
+    VOID test_for_loop(){
+        FOR(INT x=0; x<10; x=x+1){
+            PRINT.OUT("x = ", x);
+            BREAK;
+        }
+    }
+}
