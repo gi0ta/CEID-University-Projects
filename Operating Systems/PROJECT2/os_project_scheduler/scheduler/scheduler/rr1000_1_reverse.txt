@@ -1,0 +1,119 @@
+Error: Process ../work/work6 requests more processors (2) than available (1).
+executing ../work/work7
+Error: Process ../work/work6 requests more processors (2) than available (1).
+process 38958 begins on processor 0
+Process 38958 completed.
+process 38958 ends on processor 0
+PID 38958 - CMD: ../work/work7
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+executing ../work/work5
+Error: Process ../work/work6 requests more processors (2) than available (1).
+process 38958 begins on processor 0
+Process 38958 completed.
+process 38958 ends on processor 0
+PID 38958 - CMD: ../work/work7
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+process 38959 begins on processor 0
+Process 38959 completed.
+process 38959 ends on processor 0
+PID 38959 - CMD: ../work/work5
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+executing ../work/work4
+Error: Process ../work/work6 requests more processors (2) than available (1).
+process 38958 begins on processor 0
+Process 38958 completed.
+process 38958 ends on processor 0
+PID 38958 - CMD: ../work/work7
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+process 38959 begins on processor 0
+Process 38959 completed.
+process 38959 ends on processor 0
+PID 38959 - CMD: ../work/work5
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+process 38960 begins on processor 0
+Process 38960 completed.
+process 38960 ends on processor 0
+PID 38960 - CMD: ../work/work4
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+executing ../work/work3
+Error: Process ../work/work6 requests more processors (2) than available (1).
+process 38958 begins on processor 0
+Process 38958 completed.
+process 38958 ends on processor 0
+PID 38958 - CMD: ../work/work7
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+process 38959 begins on processor 0
+Process 38959 completed.
+process 38959 ends on processor 0
+PID 38959 - CMD: ../work/work5
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+process 38960 begins on processor 0
+Process 38960 completed.
+process 38960 ends on processor 0
+PID 38960 - CMD: ../work/work4
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+process 38961 begins on processor 0
+Process 38961 completed.
+process 38961 ends on processor 0
+PID 38961 - CMD: ../work/work3
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+executing ../work/work2
+Error: Process ../work/work6 requests more processors (2) than available (1).
+process 38958 begins on processor 0
+Process 38958 completed.
+process 38958 ends on processor 0
+PID 38958 - CMD: ../work/work7
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+process 38959 begins on processor 0
+Process 38959 completed.
+process 38959 ends on processor 0
+PID 38959 - CMD: ../work/work5
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+process 38960 begins on processor 0
+Process 38960 completed.
+process 38960 ends on processor 0
+PID 38960 - CMD: ../work/work4
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+process 38961 begins on processor 0
+Process 38961 completed.
+process 38961 ends on processor 0
+PID 38961 - CMD: ../work/work3
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+process 38962 begins on processor 0
+Process 38962 completed.
+process 38962 ends on processor 0
+PID 38962 - CMD: ../work/work2
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+executing ../work/work1
+Error: Process ../work/work6 requests more processors (2) than available (1).
+WORKLOAD TIME: 0.09 secs

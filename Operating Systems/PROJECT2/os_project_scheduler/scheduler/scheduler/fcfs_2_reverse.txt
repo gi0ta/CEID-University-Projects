@@ -1,0 +1,74 @@
+Executing ../work/work7
+Executing ../work/work6
+PID 38889 - CMD: ../work/work6
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+Executing ../work/work4
+PID 38888 - CMD: ../work/work7
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+Executing ../work/work5
+PID 38889 - CMD: ../work/work6
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+PID 38890 - CMD: ../work/work4
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+Executing ../work/work2
+PID 38888 - CMD: ../work/work7
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+PID 38891 - CMD: ../work/work5
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+Executing ../work/work3
+PID 38889 - CMD: ../work/work6
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+PID 38890 - CMD: ../work/work4
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+PID 38892 - CMD: ../work/work2
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+Processor 1 completed all tasks.
+PID 38888 - CMD: ../work/work7
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+PID 38891 - CMD: ../work/work5
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+PID 38893 - CMD: ../work/work3
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+Executing ../work/work1
+PID 38888 - CMD: ../work/work7
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+PID 38891 - CMD: ../work/work5
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+PID 38893 - CMD: ../work/work3
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+PID 38894 - CMD: ../work/work1
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+Processor 0 completed all tasks.
+WORKLOAD TIME: 0.00 secs

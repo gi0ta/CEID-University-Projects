@@ -1,0 +1,71 @@
+executing ../work/work7
+executing ../work/work6
+process 38980 begins on processor 0
+Process 38980 completed.
+process 38980 ends on processor 0
+PID 38980 - CMD: ../work/work7
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+executing ../work/work5
+process 38981 begins on processor 1
+Process 38981 completed.
+process 38981 ends on processor 1
+PID 38981 - CMD: ../work/work6
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+executing ../work/work4
+process 38980 begins on processor 0
+Process 38980 completed.
+process 38980 ends on processor 0
+PID 38980 - CMD: ../work/work7
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+process 38982 begins on processor 0
+Process 38982 completed.
+process 38982 ends on processor 0
+PID 38982 - CMD: ../work/work5
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+executing ../work/work3
+process 38981 begins on processor 1
+Process 38981 completed.
+process 38981 ends on processor 1
+PID 38981 - CMD: ../work/work6
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+process 38983 begins on processor 1
+Process 38983 completed.
+process 38983 ends on processor 1
+PID 38983 - CMD: ../work/work4
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+executing ../work/work2
+process 38980 begins on processor 0
+Process 38980 completed.
+process 38980 ends on processor 0
+PID 38980 - CMD: ../work/work7
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+process 38982 begins on processor 0
+Process 38982 completed.
+process 38982 ends on processor 0
+PID 38982 - CMD: ../work/work5
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+process 38984 begins on processor 0
+Process 38984 completed.
+process 38984 ends on processor 0
+PID 38984 - CMD: ../work/work3
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+executing ../work/work1
+WORKLOAD TIME: 0.11 secs

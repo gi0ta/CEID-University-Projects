@@ -1,0 +1,24 @@
+Error: Process ../work/work7 requests more processors (3) than available (2).
+executing ../work/work7
+Error: Process ../work/work7 requests more processors (3) than available (2).
+executing ../work/work7
+Error: Process ../work/work7 requests more processors (3) than available (2).
+process 38971 begins on processor 0
+Process 38971 completed.
+process 38971 ends on processor 0
+PID 38971 - CMD: ../work/work7
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+executing ../work/work7
+Error: Process ../work/work7 requests more processors (3) than available (2).
+process 38972 begins on processor 1
+Process 38972 completed.
+process 38972 ends on processor 1
+PID 38972 - CMD: ../work/work7
+	Elapsed time = 0.00 secs
+	Execution time = 0.00 secs
+	Workload time = 0.00 secs
+executing ../work/work7
+Error: Process ../work/work7 requests more processors (3) than available (2).
+WORKLOAD TIME: 0.11 secs

@@ -1,0 +1,47 @@
+process 6981 begins
+process 6981 ends
+PID 6981 - CMD: ../work/work4
+	Elapsed time = 2.55 secs
+	Execution time = 2.55 secs
+	Workload time = 2.55 secs
+Processor 3 completed all tasks.
+process 6980 begins
+process 6980 ends
+process 6983 begins
+process 6983 ends
+PID 6980 - CMD: ../work/work5
+	Elapsed time = 3.16 secs
+	Execution time = 3.16 secs
+	Workload time = 3.16 secs
+PID 6983 - CMD: ../work/work1
+	Elapsed time = 3.79 secs
+	Execution time = 0.63 secs
+	Workload time = 3.79 secs
+Processor 2 completed all tasks.
+process 6979 begins
+process 6979 ends
+process 6976 begins
+process 6976 ends
+process 6984 begins
+process 6984 ends
+PID 6979 - CMD: ../work/work6
+	Elapsed time = 3.81 secs
+	Execution time = 3.81 secs
+	Workload time = 3.81 secs
+PID 6984 - CMD: ../work/work2
+	Elapsed time = 4.99 secs
+	Execution time = 1.18 secs
+	Workload time = 4.99 secs
+Processor 1 completed all tasks.
+process 6985 begins
+process 6985 ends
+PID 6976 - CMD: ../work/work7
+	Elapsed time = 4.38 secs
+	Execution time = 4.38 secs
+	Workload time = 4.38 secs
+PID 6985 - CMD: ../work/work3
+	Elapsed time = 6.11 secs
+	Execution time = 1.73 secs
+	Workload time = 6.11 secs
+Processor 0 completed all tasks.
+WORKLOAD TIME: 6.11 secs
